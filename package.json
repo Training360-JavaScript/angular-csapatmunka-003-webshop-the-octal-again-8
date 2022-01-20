@@ -1,0 +1,40 @@
+{
+  "name": "str2-angular-project003",
+  "version": "0.0.1",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "test:01": "ng test --include=**/location.spec.ts",
+    "test:02": "ng test --include=**/event.spec.ts",
+    "test:03": "ng test --include=**/event.service.spec.ts",
+    "test:04": "ng test --include=**/navigation.component.spec.ts",
+    "test:05": "ng test --include=**/events-list.component.spec.ts",
+    "test:06": "ng test --include=**/app.component.spec.ts"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~13.1.0",
+    "@angular/common": "~13.1.0",
+    "@angular/compiler": "~13.1.0",
+    "@angular/core": "~13.1.0",
+    "@angular/forms": "~13.1.0",
+    "@angular/platform-browser": "~13.1.0",
+    "@angular/platform-browser-dynamic": "~13.1.0",
+    "@angular/router": "~13.1.0",
+    "bootstrap": "^4.6.1",
+    "rxjs": "~7.4.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular/cli": "~13.1.3",
+    "@angular/compiler-cli": "~13.1.0",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^12.11.1",
+    "ngc-esbuild-devkit": "^0.0.40",
+    "ts-node": "^10.4.0",
+    "typescript": "~4.5.2"
+  }
+}
