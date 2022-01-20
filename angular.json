@@ -73,7 +73,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "ngc-esbuild-devkit:serve",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "angular-routing:build:production"
