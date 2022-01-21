@@ -7,7 +7,7 @@ import * as data from '../model/data.json';
 })
 export class ProductService {
 
-  public list: Product = (data as any).default;
+  public list: Product[] = Array.from((data as any).default);
 
   constructor() {}
 }
