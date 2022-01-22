@@ -11,12 +11,12 @@ export interface IMenuItem {
 })
 export class ConfigService {
 
-  appName: string = 'Sample Webshop';
+  appName: string = 'The Octal Guitar Shop';
 
   menuItems: IMenuItem[] = [
     {text: 'Home', link: '/', icon: 'home'},
-    {text: 'Category01', link: '/cat01'},
-    {text: 'Category02', link: '/cat02'},
+    /*{text: 'Category01', link: '/cat01'},
+    {text: 'Category02', link: '/cat02'},*/
   ];
 
   constructor() { }
