@@ -275,7 +275,7 @@
         "active": false
     },
     {
-        "id": 1,
+        "id": 26,
         "catId": 2,
         "name": "Thomann C-404 NT Set",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Size: 4\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">European spruce top<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Okoume back and sides (Aucoumea klaineana)<\/li><\/ul>",
@@ -286,7 +286,7 @@
         "active": false
     },
     {
-        "id": 2,
+        "id": 27,
         "catId": 2,
         "name": "Startone CG 851 4\/4 Set 1 NT",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Basswood<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Neck: Nato<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Fretboard: Maple<\/li><\/ul>",
@@ -297,7 +297,7 @@
         "active": false
     },
     {
-        "id": 3,
+        "id": 28,
         "catId": 2,
         "name": "Harley Benton CG200-BK Set",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Basswood<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Neck: NATO<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Fretboard: Maple<\/li><\/ul>",
@@ -308,7 +308,7 @@
         "active": false
     },
     {
-        "id": 4,
+        "id": 29,
         "catId": 2,
         "name": "Thomann Classic 4\/4 Guitar Blac Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar 4\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Size: 4\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Laminated spruce top<\/li><\/ul>",
@@ -319,7 +319,7 @@
         "active": false
     },
     {
-        "id": 5,
+        "id": 30,
         "catId": 2,
         "name": "Startone CG851 4\/4 Classical Guitar Set",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">4\/4 Size<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Basswood body<\/li><\/ul>",
@@ -330,7 +330,7 @@
         "active": false
     },
     {
-        "id": 6,
+        "id": 31,
         "catId": 2,
         "name": "Thomann C-403 NT Set",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Size: 3\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: European spruce<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Back and sides: Okoume<\/li><\/ul>",
@@ -341,7 +341,7 @@
         "active": false
     },
     {
-        "id": 7,
+        "id": 32,
         "catId": 2,
         "name": "Yamaha C40 BL Bundle 2",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Spruce<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Back and sides: Meranti<\/li><\/ul>",
@@ -352,7 +352,7 @@
         "active": false
     },
     {
-        "id": 8,
+        "id": 33,
         "catId": 2,
         "name": "Startone CG851 3\/4 Classical Guitar Set",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Size: 3\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Basswood body<\/li><\/ul>",
@@ -363,7 +363,7 @@
         "active": false
     },
     {
-        "id": 9,
+        "id": 34,
         "catId": 2,
         "name": "Yamaha C40 Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Spruce<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Back &amp; Sides: Meranti (Shorea macrophylla)<\/li><\/ul>",
@@ -374,7 +374,7 @@
         "active": true
     },
     {
-        "id": 10,
+        "id": 35,
         "catId": 2,
         "name": "Yamaha C40 BL Bundle 1",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Spruce<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Back and sides: Meranti<\/li><\/ul>",
@@ -385,7 +385,7 @@
         "active": false
     },
     {
-        "id": 11,
+        "id": 36,
         "catId": 2,
         "name": "Pro Natura Silver 3\/4 Maple Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Size: 3\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">For children aged 11 and older<\/li><\/ul>",
@@ -396,7 +396,7 @@
         "active": false
     },
     {
-        "id": 12,
+        "id": 37,
         "catId": 2,
         "name": "Thomann Classic Guitar 3\/4 Bundle 3",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Size: 3\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Laminated spruce top<\/li><\/ul>",
@@ -407,7 +407,7 @@
         "active": false
     },
     {
-        "id": 13,
+        "id": 38,
         "catId": 2,
         "name": "Hfner HC504-4\/4 Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Solid cedar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Mahogany<\/li><\/ul>",
@@ -418,7 +418,7 @@
         "active": false
     },
     {
-        "id": 14,
+        "id": 39,
         "catId": 2,
         "name": "Yamaha C40M Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Beginner's model<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Spruce<\/li><\/ul>",
@@ -429,7 +429,7 @@
         "active": false
     },
     {
-        "id": 15,
+        "id": 40,
         "catId": 2,
         "name": "Yamaha CS40 Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Size: 3\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Spruce<\/li><\/ul>",
@@ -440,7 +440,7 @@
         "active": false
     },
     {
-        "id": 16,
+        "id": 41,
         "catId": 2,
         "name": "Alhambra 1C HT EZ incl. Gigbag Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Alhambra 1C HT EZ incl. Gigbag<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Thomann CTG-10 Clip Tuner<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Millenium Foot Rest<\/li><\/ul>",
@@ -451,7 +451,7 @@
         "active": false
     },
     {
-        "id": 17,
+        "id": 42,
         "catId": 2,
         "name": "Thomann Classic Guitar S 4\/4 Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Size: 4\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Solid, tinted spruce<\/li><\/ul>",
@@ -462,7 +462,7 @@
         "active": false
     },
     {
-        "id": 18,
+        "id": 43,
         "catId": 2,
         "name": "Thomann Classic-CE 4\/4 Guitar B Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Size: 4\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">With cutaway<\/li><\/ul>",
@@ -473,7 +473,7 @@
         "active": true
     },
     {
-        "id": 19,
+        "id": 44,
         "catId": 2,
         "name": "Yamaha CG102 NT Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Spruce top<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Back &amp; sides: Nato<\/li><\/ul>",
@@ -484,7 +484,7 @@
         "active": false
     },
     {
-        "id": 20,
+        "id": 45,
         "catId": 2,
         "name": "Yamaha C40 Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Spruce<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Back &amp; Sides: Meranti (Shorea macrophylla)<\/li><\/ul>",
@@ -495,7 +495,7 @@
         "active": false
     },
     {
-        "id": 21,
+        "id": 46,
         "catId": 2,
         "name": "Thomann Classic Guitar 3\/4 Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Size: 3\/4<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Laminated spruce top<\/li><\/ul>",
@@ -506,7 +506,7 @@
         "active": false
     },
     {
-        "id": 22,
+        "id": 47,
         "catId": 2,
         "name": "Startone Concert Guitar Set 1 English",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classical Guitar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">4\/4 Size<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Basswood body<\/li><\/ul>",
@@ -517,7 +517,7 @@
         "active": false
     },
     {
-        "id": 23,
+        "id": 48,
         "catId": 2,
         "name": "Thomann C-403 NT Set Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Thomann C-403 NT Set<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">music2me Guitar Subscription 6 Mon. BDL<\/li><\/ul>",
@@ -528,7 +528,7 @@
         "active": false
     },
     {
-        "id": 24,
+        "id": 49,
         "catId": 2,
         "name": "Thomann C-403 NT Set Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Thomann C-403 NT Set<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">music2me Guitar Subscription 12 Mon.BDL<\/li><\/ul>",
@@ -539,7 +539,7 @@
         "active": false
     },
     {
-        "id": 25,
+        "id": 50,
         "catId": 2,
         "name": "Cascha HH 2351 3\/4 Concert Set",
         "description": "<span>Cascha HH 2351 3\/4 Concert Set; classical guitar; size: 3\/4; student series; back &amp; sides: basswood; top: spruce; neck: okoume; 19 frets; fingerboard:...<\/span>",
@@ -550,7 +550,7 @@
         "active": true
     },
     {
-        "id": 1,
+        "id": 51,
         "catId": 3,
         "name": "Hfner Ignition SE",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Spruce top<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Flamed maple back and sides<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Maple one-piece neck<\/li><\/ul>",
@@ -561,7 +561,7 @@
         "active": false
     },
     {
-        "id": 2,
+        "id": 52,
         "catId": 3,
         "name": "Harley Benton TB-70 SBK Deluxe Series",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Mahogany<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Neck: Mahogany<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Neck attachment: Set-in<\/li><\/ul>",
@@ -572,7 +572,7 @@
         "active": false
     },
     {
-        "id": 3,
+        "id": 53,
         "catId": 3,
         "name": "Jackson JS2 Concert Bass Satin Black",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Poplar<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Bolt-on neck: Maple, graphite reinforced with scarf joint<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Fretboard: Amaranth<\/li><\/ul>",
@@ -583,7 +583,7 @@
         "active": false
     },
     {
-        "id": 4,
+        "id": 54,
         "catId": 3,
         "name": "Harley Benton MB-4 SB Deluxe Series",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Deluxe series<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Basswood<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Bolt-on neck: Maple<\/li><\/ul>",
@@ -594,7 +594,7 @@
         "active": false
     },
     {
-        "id": 5,
+        "id": 55,
         "catId": 3,
         "name": "Hfner Ignition Cavern SE",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Spruce top<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Flamed maple back and sides<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Maple one-piece neck<\/li><\/ul>",
@@ -605,7 +605,7 @@
         "active": false
     },
     {
-        "id": 6,
+        "id": 56,
         "catId": 3,
         "name": "Harley Benton RB-414BK Classic Series",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classic series<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Mahogany<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Glued neck: Mahogany<\/li><\/ul>",
@@ -616,7 +616,7 @@
         "active": false
     },
     {
-        "id": 7,
+        "id": 57,
         "catId": 3,
         "name": "Harley Benton MM-84A SB Deluxe Series",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Deluxe Series<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Basswood<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Flamed maple<\/li><\/ul>",
@@ -627,7 +627,7 @@
         "active": false
     },
     {
-        "id": 8,
+        "id": 58,
         "catId": 3,
         "name": "Fender SQ Aff. Jaguar Bass H CFM",
         "description": "<span>Fender Squier Affinity Jaguar Bass H Charcoal Frost Metallic; Electric Bass, Affinity Series; Body: Poplar; Neck: Maple; Neck Mount: Bolt On; Neck For...<\/span>",
@@ -638,7 +638,7 @@
         "active": false
     },
     {
-        "id": 9,
+        "id": 59,
         "catId": 3,
         "name": "Hfner Ignition SE Bundle",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Electric Bass<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Spruce top<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Flamed maple back and sides<\/li><\/ul>",
@@ -649,7 +649,7 @@
         "active": false
     },
     {
-        "id": 10,
+        "id": 60,
         "catId": 3,
         "name": "Harley Benton TB-70VS Deluxe Series",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Mahogany<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Set-in mahogany neck<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Fretboard: Blackwood (Pinus Radiata)<\/li><\/ul>",
@@ -660,7 +660,7 @@
         "active": false
     },
     {
-        "id": 11,
+        "id": 61,
         "catId": 3,
         "name": "Fender SQ CV Jaguar Bass 3-SB",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Nato<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Bolt-on neck: Maple<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Fretboard: Indian laurel<\/li><\/ul>",
@@ -671,7 +671,7 @@
         "active": false
     },
     {
-        "id": 12,
+        "id": 62,
         "catId": 3,
         "name": "Harley Benton RB-414CS Classic Series",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Classic series<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Mahogany<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Set-in neck: Mahogany<\/li><\/ul>",
@@ -682,7 +682,7 @@
         "active": false
     },
     {
-        "id": 13,
+        "id": 63,
         "catId": 3,
         "name": "Cort A4 Ultra Ash",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Swamp ash<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Mahogany<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Continuous 5-piece neck: Maple \/ Panga Panga<\/li><\/ul>",
@@ -693,7 +693,7 @@
         "active": false
     },
     {
-        "id": 14,
+        "id": 64,
         "catId": 3,
         "name": "Marcus Miller M7 Swamp Ash 4st NT 2nd Gen",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Swamp ash body<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Maple top<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Bolted maple neck<\/li><\/ul>",
@@ -704,7 +704,7 @@
         "active": false
     },
     {
-        "id": 15,
+        "id": 65,
         "catId": 3,
         "name": "Harley Benton MB-4 SBK Deluxe Series",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Basswood body<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Bolt-on maple neck<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Roseacer fretboard<\/li><\/ul>",
@@ -715,7 +715,7 @@
         "active": false
     },
     {
-        "id": 16,
+        "id": 66,
         "catId": 3,
         "name": "Fender SQ CV Jaguar Bass BK",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Nato<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Bolt-on neck: Maple<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Fretboard: Indian laurel<\/li><\/ul>",
@@ -726,7 +726,7 @@
         "active": false
     },
     {
-        "id": 17,
+        "id": 67,
         "catId": 3,
         "name": "Gibson Thunderbird Non-Reversed SB",
         "description": "<span>Gibson Thunderbird Non-Reversed Bass SB Sparkling Burgundy, electric bass, mahogany body (swietenia macrophylla - origin India\/Indonesia), mahogany\/wa...<\/span>",
@@ -737,7 +737,7 @@
         "active": false
     },
     {
-        "id": 18,
+        "id": 68,
         "catId": 3,
         "name": "Hfner Ignition TBK SE",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Spruce top<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Flamed maple back and sides<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Maple one-piece neck<\/li><\/ul>",
@@ -748,7 +748,7 @@
         "active": false
     },
     {
-        "id": 19,
+        "id": 69,
         "catId": 3,
         "name": "Fender SQ Aff. Jaguar Bass MN H BK",
         "description": "<span>Fender Squier Affinity Jaguar Bass MN H Black; Electric Bass, Affinity Series; Body: Poplar; Neck: Maple; Neck Mount: Bolt On; Neck Form: C; Fingerboa...<\/span>",
@@ -759,7 +759,7 @@
         "active": false
     },
     {
-        "id": 20,
+        "id": 70,
         "catId": 3,
         "name": "Yamaha TRBX 174EW NAT",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Alder<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Top: Mango<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Bolt-on neck: Maple<\/li><\/ul>",
@@ -770,7 +770,7 @@
         "active": false
     },
     {
-        "id": 21,
+        "id": 71,
         "catId": 3,
         "name": "Harley Benton HB-60 WB",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Vintage Series<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Build: Semi-hollowbody<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Maple with arched top<\/li><\/ul>",
@@ -781,7 +781,7 @@
         "active": false
     },
     {
-        "id": 22,
+        "id": 72,
         "catId": 3,
         "name": "Fender Player Ser Jaguar Bass PFCapri",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Player Series<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Alder<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Neck: Maple<\/li><\/ul>",
@@ -792,7 +792,7 @@
         "active": false
     },
     {
-        "id": 23,
+        "id": 73,
         "catId": 3,
         "name": "Sterling by Music Man S.U.B. Sting Ray 4 BK",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Body: Basswood<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Neck: Maple<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Fretboard: Maple<\/li><\/ul>",
@@ -803,7 +803,7 @@
         "active": false
     },
     {
-        "id": 24,
+        "id": 74,
         "catId": 3,
         "name": "Marcus Miller M7 Swamp Ash 4st TBK 2nd Gen",
         "description": "<ul class=\"fx-list\"><li class=\"product__description-item fx-list__item fx-list__item--circle\">Swamp ash body<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Maple top<\/li><li class=\"product__description-item fx-list__item fx-list__item--circle\">Bolt-on neck: maple<\/li><\/ul>",
@@ -814,7 +814,7 @@
         "active": false
     },
     {
-        "id": 25,
+        "id": 75,
         "catId": 3,
         "name": "Fender SQ Aff. Jaguar Bass MN H LPB",
         "description": "<span>Fender Squier Affinity Jaguar Bass MN H Lake Placid Blue; Electric Bass, Affinity Series; Body: Poplar; Neck: Maple; Neck Mount: Bolt On; Neck Form: C...<\/span>",
