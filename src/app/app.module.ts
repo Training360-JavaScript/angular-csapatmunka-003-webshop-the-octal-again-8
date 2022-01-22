@@ -7,18 +7,27 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { Cat01Component } from './page/cat01/cat01.component';
 import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
-
+import { KiemeltPipe } from './kiemelt.pipe';
+import { AkciosPipe } from './akcios.pipe';
+import { ProductListComponent } from './common/product-list/product-list.component';
+import { FilterPipe } from './filter.pipe';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     Cat01Component,
     Cat02Component,
-    HomeComponent
+    HomeComponent,
+    KiemeltPipe,
+    AkciosPipe,
+    ProductListComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
