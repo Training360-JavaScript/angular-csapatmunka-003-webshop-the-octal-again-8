@@ -14,6 +14,7 @@ import { ProductListComponent } from './common/product-list/product-list.compone
 import { FilterPipe } from './filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { CategoryComponent } from './page/category/category.component';
+import { ProductCarouselComponent } from './common/product-carousel/product-carousel.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { CategoryComponent } from './page/category/category.component';
     AkciosPipe,
     ProductListComponent,
     FilterPipe,
-    CategoryComponent
+    CategoryComponent,
+    ProductCarouselComponent
   ],
   imports: [
     BrowserModule,
