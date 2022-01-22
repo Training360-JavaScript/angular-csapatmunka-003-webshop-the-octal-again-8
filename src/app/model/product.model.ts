@@ -1,6 +1,7 @@
 export class Product {
     id: number = 0;
     catId: number = 0;
+    catName?: string;
     name: string = '';
     description: string = '';
     image: string = '';
@@ -15,6 +16,7 @@ export class Product {
           this.id = properties.id || 0;
           this.name = properties.name || '';
           this.catId = properties.catId ||0;
+          this.catName = properties.catName || undefined;
           this.description = properties.description || '';
           this.image = properties.image || '';
           this.price = properties.price || 0;
