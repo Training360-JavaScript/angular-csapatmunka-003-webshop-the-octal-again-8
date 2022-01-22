@@ -26,6 +26,12 @@
           [routerLink]="item.link"
         >{{ item.text }}</a>
       </li>
+      <li *ngFor="let category of categoryList" class="nav-item">
+        <a
+          class="nav-link text-white"
+          [routerLink]="['category', category.id]"
+        >{{ category.name }}</a>
+      </li>
     </ul>
   </div>
 </nav>
