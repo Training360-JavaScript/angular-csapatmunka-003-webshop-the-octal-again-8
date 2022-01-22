@@ -30,4 +30,9 @@ export class ProductService {
       }
     } while (promotedNum < maxPromoted); 
   }
+
+  getProductsByCategory(catId: number) {
+    return this.list.filter(el => el.catId === catId);
+  }
+
 }
