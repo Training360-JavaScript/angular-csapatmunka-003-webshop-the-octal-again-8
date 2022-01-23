@@ -10,11 +10,15 @@ import { ProductCardComponent } from '../product-card/product-card.component';
 export class ProductCarouselComponent implements OnInit {
 
 
-  @Input() cardList: ProductCardComponent[]=[];
+  @Input() cardList: ProductCardComponent[] = [];
+
+  n: number = this.cardList.length;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.n = Math.floor(12 / this.n);
+    console.log(this.n);
   }
 
 }
