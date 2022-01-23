@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Product } from './model/product.model';
+import { Product } from '../model/product.model';
+
 
 @Pipe({
   name: 'filter'
@@ -7,7 +8,7 @@ import { Product } from './model/product.model';
 export class FilterPipe implements PipeTransform {
 
   transform(value: Product[], phrase: string): Product[] {
-    return value.filter((a)=>{a.name.localeCompare(phrase)});
+    return value.filter((a)=> a.name.toLowerCase().includes(phrase.toLowerCase()) );
   }
 
 }

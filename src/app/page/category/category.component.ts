@@ -16,6 +16,7 @@ export class CategoryComponent implements OnInit {
     map(params => params['catId'])
   );
 
+  filterPhrase: string = '';
   catId: number = 0;
   category: Category = new Category();
   products: Product[] = [new Product()];
@@ -28,7 +29,6 @@ export class CategoryComponent implements OnInit {
 
   ngOnInit(): void {
     this.id.subscribe((catId: number) => {
-      console.log(typeof catId);
       this.catId = +catId;
       this.category = this.categoryService.categories.find(el => el.id === this.catId) || new Category();
       //TODO: Nav to 404 if not found
