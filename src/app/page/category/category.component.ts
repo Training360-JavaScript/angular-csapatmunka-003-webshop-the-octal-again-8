@@ -16,7 +16,6 @@ export class CategoryComponent implements OnInit {
     map(params => params['catId'])
   );
 
-  filterPhrase: string = '';
   catId: number = 0;
   category: Category = new Category();
   products: Product[] = [new Product()];
