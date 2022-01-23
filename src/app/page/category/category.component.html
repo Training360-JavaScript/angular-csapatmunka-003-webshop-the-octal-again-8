@@ -15,18 +15,8 @@
     </div>
 </div>
 
-<!-- ki kell szedni ha a product card már csinál valamit-->
 <div class="row">
-    <div class="col-12">
-        <ul>
-            <li *ngFor="let product of products | filter:filterPhrase">{{product.name}}</li>
-        </ul>
-    </div>
-</div>
-<!-- ki kell szedni ha a product card már csinál valamit-->
-
-<div class="row">
-    <div class="col-md-3 col-sm-6 col-xs-1" *ngFor="let product of products">
+    <div class="col-md-3 col-sm-6 col-xs-1" *ngFor="let product of products | filter:filterPhrase">
         <app-product-card [product]="product"></app-product-card>
     </div>
 </div>
