@@ -1,0 +1,22 @@
+.navbar-brand {
+    color: #fff;
+    &:hover {
+        color: #ff0000;
+    }
+}
+
+li.nav-item {
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in;
+    &:hover {
+        border-bottom-color: #fff;
+    }
+
+    a {
+        transition: color 0.2s ease-in;
+        &:hover {
+            color: #ff0000 !important;
+        }
+    }
+
+}
