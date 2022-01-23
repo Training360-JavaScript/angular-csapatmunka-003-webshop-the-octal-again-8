@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Product } from 'src/app/model/product.model';
-import { ProductCardComponent } from '../product-card/product-card.component';
+import { Product } from '../../model/product.model';
 
 @Component({
   selector: 'app-product-carousel',
@@ -9,8 +8,7 @@ import { ProductCardComponent } from '../product-card/product-card.component';
 })
 export class ProductCarouselComponent implements OnInit {
 
-
-  @Input() cardList: ProductCardComponent[] = [];
+  @Input() cardList: Product[] = [];
 
   n: number = this.cardList.length;
 
@@ -18,7 +16,6 @@ export class ProductCarouselComponent implements OnInit {
 
   ngOnInit(): void {
     this.n = Math.floor(12 / this.n);
-    console.log(this.n);
   }
 
 }
