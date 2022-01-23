@@ -30,7 +30,7 @@
         "price": 37491,
         "stock": 11,
         "featured": false,
-        "active": false
+        "active": true
     },
     {
         "id": 4,
@@ -84,7 +84,7 @@
         "image": "502846.jpg",
         "price": 37491,
         "stock": 14,
-        "featured": false,
+        "featured": true,
         "active": true
     },
     {
@@ -371,7 +371,7 @@
         "price": 37491,
         "stock": 5,
         "featured": false,
-        "active": false
+        "active": true
     },
     {
         "id": 35,
@@ -470,7 +470,7 @@
         "price": 37491,
         "stock": 2,
         "featured": false,
-        "active": false
+        "active": true
     },
     {
         "id": 44,
@@ -547,7 +547,7 @@
         "price": 37491,
         "stock": 4,
         "featured": false,
-        "active": false
+        "active": true
     },
     {
         "id": 51,
@@ -601,7 +601,7 @@
         "image": "492045.jpg",
         "price": 124613,
         "stock": 1,
-        "featured": false,
+        "featured": true,
         "active": true
     },
     {
