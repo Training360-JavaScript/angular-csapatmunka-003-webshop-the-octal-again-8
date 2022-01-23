@@ -1,24 +1,29 @@
-<input [(ngModel)]="phrase">
-
 <div class="container">
   <div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="form-group">
+        <span class="fa fa-search form-control-icn"></span>
+        <input
+          type="text"
+          [(ngModel)]="phrase"
+          class="form-control"
+          placeholder="Filter products..."
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="col-12">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>name</th>
-            <th>description</th>
-            <th>stock</th>
-            <th>price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor = "let product of products | filter:phrase">
-            <td><app-product-card [product]="product"></app-product-card></td>
+      <table class="table">
+        <tbody class="row row-cols-1 row-cols-md-2 row-cols-lg-5">
+          <tr *ngFor="let product of products | filter:phrase">
+            <td class="col-2">
+              <app-product-card [product]="product"></app-product-card>
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 </div>
-
