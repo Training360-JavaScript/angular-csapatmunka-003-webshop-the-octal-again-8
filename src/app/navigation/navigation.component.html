@@ -27,6 +27,7 @@
         <li *ngFor="let category of categoryList" class="nav-item">
           <a
             class="nav-link text-white"
+            [routerLinkActive]="['menu-active']"
             [routerLink]="['category', category.id]"
           >{{ category.name }}</a>
         </li>
