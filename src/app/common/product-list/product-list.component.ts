@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Product } from 'src/app/model/product.model';
 
 
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -10,7 +11,7 @@ import { Product } from 'src/app/model/product.model';
 export class ProductListComponent implements OnInit {
 
   @Input() products: Product[] = [];
-  
+
   phrase: string = "";
 
   constructor() { }
