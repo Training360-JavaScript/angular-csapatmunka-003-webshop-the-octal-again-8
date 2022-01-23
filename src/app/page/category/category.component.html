@@ -3,20 +3,4 @@
     <p>{{category.description}}</p>
 </div>
 
-<div class="row search-row mb-4">
-    <div class="col-md-9 col-sm-8 col-xs-12">
-        <h4>Product in this category</h4>
-    </div>
-    <div class="col-md-3 col-sm-4 col-xs-12">
-        <div class="form-group">
-            <span class="fa fa-search form-control-icn"></span>
-            <input type="text" [(ngModel)]="filterPhrase" class="form-control" placeholder="Filter products...">
-          </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-3 col-sm-6 col-xs-1" *ngFor="let product of products | filter:filterPhrase">
-        <app-product-card [product]="product"></app-product-card>
-    </div>
-</div>
+<app-product-list [products]="products"></app-product-list>
