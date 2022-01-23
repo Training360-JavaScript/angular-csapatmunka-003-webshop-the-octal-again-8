@@ -8,12 +8,13 @@ import { NavigationComponent } from './navigation/navigation.component';
 //import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
 import { ProductCardComponent } from './common/product-card/product-card.component';
-import { KiemeltPipe } from './kiemelt.pipe';
-import { AkciosPipe } from './akcios.pipe';
+import { FeaturedPipe } from './pipe/featured.pipe';
+import { PromotedPipe } from './pipe/promoted.pipe';
 import { ProductListComponent } from './common/product-list/product-list.component';
-import { FilterPipe } from './filter.pipe';
+
 import { FormsModule } from '@angular/forms';
 import { CategoryComponent } from './page/category/category.component';
+import { FilterPipe } from './pipe/filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,8 +23,8 @@ import { CategoryComponent } from './page/category/category.component';
     //Cat02Component,
     HomeComponent,
     ProductCardComponent,
-    KiemeltPipe,
-    AkciosPipe,
+    FeaturedPipe,
+    PromotedPipe,
     ProductListComponent,
     FilterPipe,
     CategoryComponent
