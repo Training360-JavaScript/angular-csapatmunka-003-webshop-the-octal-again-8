@@ -9,6 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProductCardComponent implements OnInit {
 
   @Input() product: Product = new Product();
+  @Input() hideDescription: boolean = false;
 
   constructor() { }
 
