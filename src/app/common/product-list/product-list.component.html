@@ -14,7 +14,7 @@
         </thead>
         <tbody>
           <tr *ngFor = "let product of products | filter:phrase">
-            <td><app-product-card></app-product-card></td>
+            <td><app-product-card [product]="product"></app-product-card></td>
           </tr>
         </tbody>
       </table>
