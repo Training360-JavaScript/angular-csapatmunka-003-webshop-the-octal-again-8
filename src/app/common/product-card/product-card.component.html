@@ -1,9 +1,13 @@
-<div class="card">
+<div class="card pt-2 h-100">
   <img src="assets/images/products/thumb_{{product.image}}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">{{product.name}}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-    </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5>{{product.name}}</h5>
+    <div [innerHTML]="product.description"></div>
+    <span *ngIf="!product.promotedPrice">{{product.price | currency: 'EUR':'symbol':'1.0-0' }}</span>
+    <span id="promoted" *ngIf="product.promotedPrice"
+      class="font-weight-light">{{product.price | currency : 'EUR':'symbol':'1.0-0' }}</span>
+    <br>
+    <span *ngIf="product.promotedPrice" class="font-weight-bold">
+      {{product.promotedPrice | currency: 'EUR':'symbol':'1.0-0' }}</span>
   </div>
 </div>
