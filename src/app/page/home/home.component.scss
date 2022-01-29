@@ -1,0 +1,22 @@
+.jumbotron {
+    background-image: url('/assets/images/guitar.svg');
+    background-position: bottom 10px right 5px;
+    background-repeat: no-repeat;
+    background-color: #4b4c4c;
+    background-position: fixed;
+    background-size: 30%;
+    color: #fff;
+}
+
+.mainpage-category-card {
+    background-color: #4b4b4b;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        background-color: #fdfdfd;
+        color: #4b4b4b;
+        -webkit-box-shadow: 0px 8px 15px -3px rgba(0,0,0,0.56); 
+        box-shadow: 0px 8px 15px -3px rgba(0,0,0,0.56);
+    }
+}
