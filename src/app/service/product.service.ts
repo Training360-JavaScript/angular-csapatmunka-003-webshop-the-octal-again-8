@@ -1,5 +1,5 @@
+import { Product } from './../model/product.model';
 import { Injectable } from '@angular/core';
-import { Product } from '../model/product.model';
 import * as data from '../model/data.json';
 import { CategoryService } from './category.service';
 
@@ -15,7 +15,7 @@ export class ProductService {
     this.list.forEach(product => {
       product.catName = this.categories.categories.find(el => el.id === product.catId)?.name || '';
     });
-  
+
     //gen 5 random promoted
     let promotedNum = 0;
     const possiblePromotes = [5, 10, 15, 20, 25];
@@ -28,11 +28,18 @@ export class ProductService {
         item.promotedPrice = Math.round(item.price * ((100 - possiblePromotes[Math.floor(Math.random() * possiblePromotes.length)]) / 100));
         promotedNum += 1;
       }
-    } while (promotedNum < maxPromoted); 
+    } while (promotedNum < maxPromoted);
   }
 
   getProductsByCategory(catId: number) {
     return this.list.filter(el => el.catId === catId);
   }
 
+  update(product:Product){
+    //TODO
+  }
+
+  remove(product:Product){
+    //TODO
+  }
 }

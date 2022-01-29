@@ -24,6 +24,11 @@ export class DataEditorComponent implements OnInit {
     this.categories = this.categoryService.categories;
   }
 
-  onDelete(event:Event){// TODO
+  onDelete(product:Product){
+    this.productService.remove(product);
+  }
+
+  onUpdate(product:Product){
+    this.productService.update(product);
   }
 }
