@@ -18,6 +18,7 @@ import { ProductCarouselComponent } from './common/product-carousel/product-caro
 import { FilterPipe } from './pipe/filter.pipe';
 import { AdminComponent } from './page/admin/admin.component';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
+import { TwoWayEditorComponent } from './common/two-way-editor/two-way-editor.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { DataEditorComponent } from './common/data-editor/data-editor.component'
     CategoryComponent,
     ProductCarouselComponent,
     AdminComponent,
-    DataEditorComponent
+    DataEditorComponent,
+    TwoWayEditorComponent
   ],
   imports: [
     BrowserModule,
