@@ -27,43 +27,8 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let product of products">
-        <td>
-          <select class="form-control" [(ngModel)]="product.catId">
-            <option *ngFor="let category of categories" [ngValue]="category.id">
-              {{ category.name }}
-            </option>
-          </select>
-        </td>
-        <td><input class="form-control" class="form-control" type="text" [(ngModel)]="product.name" /></td>
-        <td><input class="form-control narrow" type="text" [(ngModel)]="product.description" /></td>
-        <td><img src="assets\images\products\thumb_{{ product.image }}" alt=""></td>
-        <td><input class="form-control price" type="text" [ngModel]="product.price | currency: 'EUR':'symbol':'1.0-0'" (ngModelChange)="product.price=$event" /></td>
-        <td><input class="form-control narrow" type="number" [(ngModel)]="product.stock" /></td>
-        <td>
-          <select class="form-control" [(ngModel)]="product.featured">
-            <option [ngValue]="true">true</option>
-            <option [ngValue]="false">false</option>
-          </select>
-        </td>
-        <td>
-          <select class="form-control" [(ngModel)]="product.active">
-            <option [ngValue]="true">true</option>
-            <option [ngValue]="false">false</option>
-          </select>
-        </td>
-        <td><input class="form-control price" type="text" [ngModel]="product.promotedPrice | currency: 'EUR':'symbol':'1.0-0'" (ngModelChange)="product.promotedPrice=$event" /></td>
-        <td>
-          <div class="btn-group">
-             <button (click)="onUpdate(product)" class="btn btn-info">
-              <i class="fa fa-save"></i>
-            </button>
-            <button (click)="onDelete(product)" class="btn btn-danger ml-2">
-              <i class="fa fa-trash"></i>
-            </button>
-          </div>
-        </td>
-      </tr>
+        <tr app-two-way-editor [product]="product" [categories]="categories" *ngFor="let product of products"
+        (delProduct)="onDelete($event)" (updateProduct)="onUpdate($event)"></tr>
     </tbody>
   </table>
 </div>

@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { Product } from './../model/product.model';
 import { Injectable } from '@angular/core';
 import * as data from '../model/data.json';
@@ -35,11 +36,11 @@ export class ProductService {
     return this.list.filter(el => el.catId === catId);
   }
 
-  update(product:Product){
-    //TODO
+  update(product:Product):Observable<Product>{
+    return new Observable();
   }
 
-  remove(product:Product){
-    //TODO
+  remove(product:Product):Observable<unknown>{
+    return new Observable();
   }
 }
