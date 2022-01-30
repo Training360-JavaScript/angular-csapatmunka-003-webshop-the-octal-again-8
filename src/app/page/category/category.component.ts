@@ -18,7 +18,7 @@ export class CategoryComponent implements OnInit {
 
   catId: number = 0;
   category: Category = new Category();
-  products: Product[] = [new Product()];
+  products!: Product[];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -33,7 +33,9 @@ export class CategoryComponent implements OnInit {
       //TODO: Nav to 404 if not found
 
       //load products
-      this.products = this.productService.getProductsByCategory(this.catId);
+      this.productService.getProductsByCategory(this.catId).subscribe(products => {
+        this.products = products;
+      });
     });
   }
 

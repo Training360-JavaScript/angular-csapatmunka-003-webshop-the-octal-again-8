@@ -20,7 +20,7 @@ export class DataEditorComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.products = this.productService.list;
+    this.productService.getAll().subscribe((products => this.products));
     this.categories = this.categoryService.categories;
   }
 

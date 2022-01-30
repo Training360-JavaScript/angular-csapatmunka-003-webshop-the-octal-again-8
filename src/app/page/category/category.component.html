@@ -3,11 +3,12 @@
     <p>{{category.description}}</p>
 </div>
 
-<div class="row mb-4">
+<ng-container *ngIf="products">
+  <div class="row mb-4">
     <div class="col-12 mb-4">
         <h3>Featured in this category</h3>
         <app-product-carousel [hideDescription]="true" [cardList]= "products | featured"></app-product-carousel>
     </div>
-</div>
-
-<app-product-list [products]="products"></app-product-list>
+  </div>
+  <app-product-list [products]="products"></app-product-list>
+</ng-container>

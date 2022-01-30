@@ -8,9 +8,9 @@ import { Product } from '../../model/product.model';
 })
 export class ProductCarouselComponent implements OnInit {
 
-  @Input() cardList: Product[] = [];
+  @Input() cardList!: Product[]|null;
   @Input() hideDescription: boolean = false;
- 
+
 
   constructor() { }
 
