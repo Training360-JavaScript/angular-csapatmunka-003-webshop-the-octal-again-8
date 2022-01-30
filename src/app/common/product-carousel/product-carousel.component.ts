@@ -8,17 +8,11 @@ import { Product } from '../../model/product.model';
 })
 export class ProductCarouselComponent implements OnInit {
 
-  @Input() cardList: Product[] = [];
-  //cardlist = [new Product(), new Product(), new Product(), new Product(), new Product()];
+  @Input() cardList!: Product[]|null;
+  @Input() hideDescription: boolean = false;
 
-  //n!: number;
 
   constructor() { }
 
-  ngOnInit(): void {
-    /*     this.n = this.cardList.length;
-        console.log(this.n);
-        this.n = Math.floor(12 / this.n);
-     */
-  }
+  ngOnInit(): void { }
 }

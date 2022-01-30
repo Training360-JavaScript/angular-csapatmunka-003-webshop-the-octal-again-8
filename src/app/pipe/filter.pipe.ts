@@ -5,7 +5,8 @@ import { Product } from '../model/product.model';
   name: 'filter',
 })
 export class FilterPipe implements PipeTransform {
-  transform(value: Product[], phrase: string): Product[] {
+  transform(value: Product[]|null, phrase: string): Product[]|null {
+    if(!value) return value;
     return value.filter((a) => {
       let numberPhrase = parseInt(phrase);
       if (!isNaN(numberPhrase)) {

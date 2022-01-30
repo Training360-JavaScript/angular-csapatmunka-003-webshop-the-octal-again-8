@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,9 @@ import { FormsModule } from '@angular/forms';
 import { CategoryComponent } from './page/category/category.component';
 import { ProductCarouselComponent } from './common/product-carousel/product-carousel.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { AdminComponent } from './page/admin/admin.component';
+import { DataEditorComponent } from './common/data-editor/data-editor.component';
+import { TwoWayEditorComponent } from './common/two-way-editor/two-way-editor.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,12 +33,16 @@ import { FilterPipe } from './pipe/filter.pipe';
     ProductListComponent,
     FilterPipe,
     CategoryComponent,
-    ProductCarouselComponent
+    ProductCarouselComponent,
+    AdminComponent,
+    DataEditorComponent,
+    TwoWayEditorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

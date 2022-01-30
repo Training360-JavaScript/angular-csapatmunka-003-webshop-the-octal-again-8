@@ -1,37 +1,38 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
-  <a
-    class="navbar-brand"
-    routerLink="/"
-  >{{ appName }}</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div
-    class="collapse navbar-collapse"
-    id="navbarSupportedContent"
-  >
-    <ul class="navbar-nav mr-auto">
-      <li *ngFor="let item of menuItems" class="nav-item">
-        <a
-          class="nav-link text-white"
-          [routerLink]="item.link"
-        >{{ item.text }}</a>
-      </li>
-      <li *ngFor="let category of categoryList" class="nav-item">
-        <a
-          class="nav-link text-white"
-          [routerLink]="['category', category.id]"
-        >{{ category.name }}</a>
-      </li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">{{ appName }}</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div
+      class="collapse navbar-collapse justify-content-end"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav ml-auto">
+        <li *ngFor="let item of menuItems" class="nav-item">
+          <a
+            class="nav-link text-white"
+            [routerLink]="item.link"
+          >{{ item.text }}</a>
+        </li>
+        <li *ngFor="let category of categoryList" class="nav-item">
+          <a
+            class="nav-link text-white"
+            [routerLinkActive]="['menu-active']"
+            [routerLink]="['category', category.id]"
+          >{{ category.name }}</a>
+        </li>
+      </ul>
+    </div>
+  
   </div>
 </nav>

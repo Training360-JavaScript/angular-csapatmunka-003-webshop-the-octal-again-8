@@ -1,0 +1,85 @@
+<ng-container *ngIf="!isEditable">
+  <td class="align-middle">{{ product.catName }}</td>
+  <td class="align-middle">{{ product.name }}</td>
+  <td class="align-middle" [innerHTML]="product.description"></td>
+  <td class="align-middle"><img class="img-fluid" src="{{imageBaseURL}}/thumb_{{ product.image }}" alt="" /></td>
+  <td class="align-middle">{{ product.price | currency: 'EUR':'symbol':'1.0-0' }} </td>
+  <td class="align-middle">{{ product.stock }}</td>
+  <td class="align-middle">{{ product.featured }}</td>
+  <td class="align-middle">{{ product.active }}</td>
+  <td class="align-middle">{{ product.promotedPrice | currency: 'EUR':'symbol':'1.0-0'}}</td>
+  <td class="align-middle">
+    <div class="btn-group">
+      <button (click)="isEditable = true" class="btn btn-success">
+        <i class="fa fa-pencil"></i>
+      </button>
+    </div>
+  </td>
+</ng-container>
+
+<ng-container *ngIf="isEditable">
+  <td class="align-middle">
+    <select class="form-control" [(ngModel)]="product.catId">
+      <option *ngFor="let category of categories" [ngValue]="category.id">
+        {{ category.name }}
+      </option>
+    </select>
+  </td>
+  <td class="align-middle">
+    <input
+      class="form-control"
+      class="form-control"
+      type="text"
+      [(ngModel)]="product.name"
+    />
+  </td>
+  <td class="align-middle">
+    <textarea class="form-control" [(ngModel)]="product.description"></textarea>
+  </td>
+  <td class="align-middle"><img class="img-fluid" src="{{imageBaseURL}}/thumb_{{ product.image }}" alt="" /></td>
+  <td class="align-middle">
+    <input
+      class="form-control price"
+      type="text"
+      [ngModel]="product.price | currency: 'EUR':'symbol':'1.0-0'"
+      (ngModelChange)="product.price = $event"
+    />
+  </td>
+  <td class="align-middle">
+    <input
+      class="form-control narrow"
+      type="number"
+      [(ngModel)]="product.stock"
+    />
+  </td>
+  <td class="align-middle">
+    <select class="form-control" [(ngModel)]="product.featured">
+      <option [ngValue]="true">true</option>
+      <option [ngValue]="false">false</option>
+    </select>
+  </td>
+  <td class="align-middle">
+    <select class="form-control" [(ngModel)]="product.active">
+      <option [ngValue]="true">true</option>
+      <option [ngValue]="false">false</option>
+    </select>
+  </td>
+  <td class="align-middle">
+    <input
+      class="form-control price"
+      type="text"
+      [ngModel]="product.promotedPrice | currency: 'EUR':'symbol':'1.0-0'"
+      (ngModelChange)="product.promotedPrice = $event"
+    />
+  </td>
+  <td class="align-middle">
+    <div class="btn-group">
+      <button (click)="onUpdate(product)" class="btn btn-info">
+        <i class="fa fa-save"></i>
+      </button>
+      <button (click)="onDelete(product)" class="btn btn-danger ml-2">
+        <i class="fa fa-trash"></i>
+      </button>
+    </div>
+  </td>
+</ng-container>
