@@ -2,7 +2,7 @@
   <td>{{ product.catName }}</td>
   <td>{{ product.name }}</td>
   <td [innerHTML]="product.description"></td>
-  <td><img class="img-fluid" src="assets/images/products/thumb_{{ product.image }}" alt="" /></td>
+  <td><img class="img-fluid" src="{{imageBaseURL}}/thumb_{{ product.image }}" alt="" /></td>
   <td>{{ product.price | currency: 'EUR':'symbol':'1.0-0' }} </td>
   <td>{{ product.stock }}</td>
   <td>{{ product.featured }}</td>

@@ -1,6 +1,7 @@
 import { Product } from './../../model/product.model';
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Category } from 'src/app/model/category.model';
+import { environment } from '../../../environments/environment';
 
 
 @Component({
@@ -12,14 +13,13 @@ export class TwoWayEditorComponent implements OnInit {
 
 
    @Input() product :Product = new Product();
-
    @Input() categories: Category[] = [];
 
    @Output() delProduct:EventEmitter<Product> = new EventEmitter();
-
    @Output() updateProduct:EventEmitter<Product> = new EventEmitter();
 
    isEditable:boolean = false;
+   imageBaseURL: string = `${environment.baseURL}product_images/`;
 
   constructor() { }
 
