@@ -36,7 +36,7 @@
   <td class="align-middle">
     <textarea class="form-control" [(ngModel)]="product.description"></textarea>
   </td>
-  <td class="align-middle"><img class="img-fluid" src="assets/images/products/thumb_{{ product.image }}" alt="" /></td>
+  <td class="align-middle"><img class="img-fluid" src="{{imageBaseURL}}/thumb_{{ product.image }}" alt="" /></td>
   <td class="align-middle">
     <input
       class="form-control price"
