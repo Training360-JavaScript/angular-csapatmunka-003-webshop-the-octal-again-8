@@ -10,13 +10,12 @@ import { Product } from 'src/app/model/product.model';
 })
 export class ProductListComponent implements OnInit {
 
-  @Input() products: Product[] = [];
+  @Input() products!: Product[];
 
   phrase: string = "";
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }

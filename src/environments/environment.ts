@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseURL: 'https://www.tr360-json-server.kovix.info/'
+  baseURL: 'http://localhost:3000/'
 };
 
 /*
