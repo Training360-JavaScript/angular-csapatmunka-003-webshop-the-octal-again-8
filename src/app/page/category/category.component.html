@@ -1,14 +1,12 @@
 <div class="jumbotron">
-    <h1>{{category.name}}</h1>
-    <p>{{category.description}}</p>
+  <h1>{{category.name}}</h1>
+  <p>{{category.description}}</p>
 </div>
 
-<ng-container *ngIf="products">
-  <div class="row mb-4">
-    <div class="col-12 mb-4">
-        <h3>Featured in this category</h3>
-        <app-product-carousel [hideDescription]="true" [cardList]= "products | featured"></app-product-carousel>
-    </div>
+<div class="row mb-4" *ngIf="products">
+  <div class="col-12 mb-4">
+    <h3>Featured in this category</h3>
+    <app-product-carousel [hideDescription]="true" [cardList]="products | featured"></app-product-carousel>
   </div>
-  <app-product-list [products]="products"></app-product-list>
-</ng-container>
+</div>
+<app-product-list [products]="products"></app-product-list>
