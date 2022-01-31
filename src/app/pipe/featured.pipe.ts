@@ -6,8 +6,7 @@ import { Product } from '../model/product.model';
 })
 export class FeaturedPipe implements PipeTransform {
 
-  transform(value: Product[]|null, arg: number = 5): Product[]|null {
-    if (!value) return value;
+  transform(value: Product[], arg: number = 5): Product[] {
     return value.filter((a)=>a.featured).slice(0, arg);
   }
 

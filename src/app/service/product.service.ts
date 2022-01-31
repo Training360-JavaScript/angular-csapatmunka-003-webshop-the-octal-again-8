@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductService {
 
-  apiURL: string = `${environment.baseURL}products`;
+  apiURL: string = `${environment.baseURL}products?_expand=category`;
 
   constructor(
     private http: HttpClient
@@ -20,7 +20,7 @@ export class ProductService {
   }
 
   getProductsByCategory(catId: number): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.apiURL}?categoryId_eq=${catId}`);
+    return this.http.get<Product[]>(`${this.apiURL}&categoryId_eq=${catId}`);
   }
 
   update(product:Product): Observable<Product>{

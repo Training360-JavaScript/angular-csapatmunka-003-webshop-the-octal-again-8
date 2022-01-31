@@ -13,7 +13,7 @@ export class TwoWayEditorComponent implements OnInit {
 
 
    @Input() product :Product = new Product();
-   @Input() categories: Category[] = [];
+   @Input() categories!: Category[]|null;
 
    @Output() delProduct:EventEmitter<Product> = new EventEmitter();
    @Output() updateProduct:EventEmitter<Product> = new EventEmitter();

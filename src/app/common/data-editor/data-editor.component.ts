@@ -3,6 +3,7 @@ import { Product } from './../../model/product.model';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/service/product.service';
 import { Category } from 'src/app/model/category.model';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-data-editor',
@@ -12,7 +13,7 @@ import { Category } from 'src/app/model/category.model';
 export class DataEditorComponent implements OnInit {
 
   products: Product[] = [new Product()];
-  categories:Category[] = [];
+  categories: Observable<Category[]> = this.categoryService.getAll();
 
   constructor(
     private productService: ProductService,
@@ -23,7 +24,6 @@ export class DataEditorComponent implements OnInit {
     this.productService.getAll().subscribe((products => {
       this.products = products;
     }));
-    this.categories = this.categoryService.categories;
   }
 
   onDelete(product:Product){

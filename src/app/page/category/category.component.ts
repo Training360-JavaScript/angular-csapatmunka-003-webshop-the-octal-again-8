@@ -29,8 +29,10 @@ export class CategoryComponent implements OnInit {
   ngOnInit(): void {
     this.id.subscribe((catId: number) => {
       this.catId = +catId;
-      this.category = this.categoryService.categories.find(el => el.id === this.catId) || new Category();
-      //TODO: Nav to 404 if not found
+     // this.category = this.categoryService.categories.find(el => el.id === this.catId) || new Category();
+      this.categoryService.getOne(this.catId).forEach(category => {this.category = category});
+     //TODO: Nav to 404 if not found
+
 
       //load products
       this.productService.getProductsByCategory(this.catId).subscribe(products => {

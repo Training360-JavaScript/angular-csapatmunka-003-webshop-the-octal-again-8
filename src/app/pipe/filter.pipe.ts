@@ -5,9 +5,9 @@ import { Product } from '../model/product.model';
   name: 'filter',
 })
 export class FilterPipe implements PipeTransform {
-  transform(value: Product[] | null, phrase: string = '', key: string = ''): Product[] | null {
+  transform(value: Product[], phrase: string = '', key: string = ''): Product[] {
 
-    if (!Array.isArray(value) || !phrase) {
+    if (!phrase) {
       return value;
     }
 

@@ -7,21 +7,17 @@
     </div>
 </div>
 
-<div class="row mb-4">
+<div class="row mb-4" *ngIf="products">
     <div class="col-12">
         <h3>Our featured products:</h3>
-        <ng-container *ngIf="products">
-          <app-product-carousel [hideDescription]="true" [cardList]= "products | featured"></app-product-carousel>
-        </ng-container>
+        <app-product-carousel [hideDescription]="true" [cardList]= "products | featured"></app-product-carousel>
     </div>
 </div>
 
-<div class="row mb-4">
+<div class="row mb-4" *ngIf="products">
     <div class="col-12">
         <h3>Our promoted products:</h3>
-        <ng-container *ngIf="products">
           <app-product-carousel [hideDescription]="true" [cardList]= "products | promoted"></app-product-carousel>
-        </ng-container>
     </div>
 </div>
 
@@ -31,7 +27,7 @@
     </div>
 </div>
 <div class="row mb-4">
-    <div class="col-md-{{12 / categories.length | number:'1.0-0'}} d-flex align-items-stretch" *ngFor="let category of categories">
+    <div class="col-md-4 d-flex align-items-stretch" *ngFor="let category of categories | async">
         <div class="card mainpage-category-card">
             <div class="card-body">
               <h5 class="card-title">{{category.name}}</h5>
