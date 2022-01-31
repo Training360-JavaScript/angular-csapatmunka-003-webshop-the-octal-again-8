@@ -1,5 +1,5 @@
 <ng-container *ngIf="!isEditable">
-  <td class="align-middle">{{ product.catName }}</td>
+  <td class="align-middle">{{ product.category?.name }}</td>
   <td class="align-middle">{{ product.name }}</td>
   <td class="align-middle" [innerHTML]="product.description"></td>
   <td class="align-middle"><img class="img-fluid" src="{{imageBaseURL}}/thumb_{{ product.image }}" alt="" /></td>
