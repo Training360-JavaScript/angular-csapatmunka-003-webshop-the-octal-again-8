@@ -11,7 +11,7 @@
     </button>
   </div>
 
-<div class="table-responsive">
+<div class="table-responsive" *ngIf="categories">
   <table class="table table-sm table-hover table-striped table-bordered">
     <thead>
       <tr>
@@ -28,7 +28,7 @@
       </tr>
     </thead>
     <tbody>
-        <tr app-two-way-editor [product]="product" [categories]="categories" *ngFor="let product of products"
+        <tr app-two-way-editor [product]="product" [categories]="categories | async " *ngFor="let product of products"
         (delProduct)="onDelete($event)" (updateProduct)="onUpdate($event)"></tr>
     </tbody>
   </table>

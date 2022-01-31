@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   products!: Product[];
 
-  categories: Category[] = this.categoryService.categories;
+  categories: Observable<Category[]>  = this.categoryService.getAll();
   constructor(
     private productService:ProductService,
     private categoryService: CategoryService

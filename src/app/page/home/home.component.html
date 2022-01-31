@@ -27,7 +27,7 @@
     </div>
 </div>
 <div class="row mb-4">
-    <div class="col-md-{{12 / categories.length | number:'1.0-0'}} d-flex align-items-stretch" *ngFor="let category of categories">
+    <div class="col-md-4 d-flex align-items-stretch" *ngFor="let category of categories | async">
         <div class="card mainpage-category-card">
             <div class="card-body">
               <h5 class="card-title">{{category.name}}</h5>

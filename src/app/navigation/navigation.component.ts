@@ -12,7 +12,7 @@ export class NavigationComponent implements OnInit {
 
   appName: string = this.config.appName;
   menuItems: IMenuItem[] = this.config.menuItems;
-  categoryList: Category[] = this.categories.categories;
+  categoryList!: Category[];
 
   constructor(
     private config: ConfigService,
@@ -20,6 +20,7 @@ export class NavigationComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.categories.getAll().forEach(categories => { this.categoryList = categories });
   }
 
 }
