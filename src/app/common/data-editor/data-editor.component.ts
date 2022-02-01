@@ -14,10 +14,13 @@ export class DataEditorComponent implements OnInit {
 
   products: Product[] = [new Product()];
   categories: Observable<Category[]> = this.categoryService.getAll();
+  phrase: string = ""; //SzaboZs: filter pipe-hoz
+  filterKey: string = ""; //SzaboZs: filter pipe-hoz
+  keys: string[] = Object.keys(new Product()).filter(key => { return !((key == 'id') || (key == 'catId')) }); //SzaboZs: filter pipe-hoz
 
   constructor(
     private productService: ProductService,
-    private categoryService:CategoryService,
+    private categoryService: CategoryService,
   ) { }
 
   ngOnInit(): void {
@@ -26,11 +29,11 @@ export class DataEditorComponent implements OnInit {
     }));
   }
 
-  onDelete(product:Product){
+  onDelete(product: Product) {
     this.productService.remove(product).subscribe();
   }
 
-  onUpdate(product:Product){
+  onUpdate(product: Product) {
     this.productService.update(product).subscribe();
   }
 }

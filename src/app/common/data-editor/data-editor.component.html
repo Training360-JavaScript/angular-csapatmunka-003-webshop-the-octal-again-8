@@ -5,32 +5,46 @@
     </div>
     <div class="col-2 text-right"></div>
   </div>
-  <div>
+  <div class="inline">
     <button [routerLink]="['admin']" class="btn btn-success mb-3">
       CREATE
     </button>
+    <div class="form-group form-inline pull-right">
+      <label for="phrase" class="ml-2">Phrase:</label>
+      <input type="text" id="phrase" [(ngModel)]="phrase" class="form-control ml-2" placeholder="Filter products...">
+    </div>
+    <div class="form-group form-inline pull-right">
+      <label for="key">Column:</label>
+      <select type="text" id="key" [(ngModel)]="filterKey" class="form-control ml-2" placeholder="Filter Column...">
+<!--   <option value="keys[1]" selected>{{keys[1] | titlecase}}</option>  -->
+       <option *ngFor="let key of keys" [value]="key">
+          {{ key | titlecase }}
+        </option>
+      </select>
+    </div>
   </div>
 
-<div class="table-responsive" *ngIf="categories">
-  <table class="table table-sm table-hover table-striped table-bordered">
-    <thead>
-      <tr>
-        <th>Category</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Image</th>
-        <th>Price(€)</th>
-        <th>Stock</th>
-        <th>Featured</th>
-        <th>Active</th>
-        <th>Promoted Price(€)</th>
-        <th>&nbsp;</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr app-two-way-editor [product]="product" [categories]="categories | async " *ngFor="let product of products"
-        (delProduct)="onDelete($event)" (updateProduct)="onUpdate($event)"></tr>
-    </tbody>
-  </table>
-</div>
+  <div class="table-responsive" *ngIf="categories">
+    <table class="table table-sm table-hover table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Image</th>
+          <th>Price(€)</th>
+          <th>Stock</th>
+          <th>Featured</th>
+          <th>Active</th>
+          <th>Promoted Price(€)</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr app-two-way-editor [product]="product" [categories]="categories | async "
+          *ngFor="let product of products | filter:phrase:filterKey" (delProduct)="onDelete($event)"
+          (updateProduct)="onUpdate($event)"></tr>
+      </tbody>
+    </table>
+  </div>
 </div>
