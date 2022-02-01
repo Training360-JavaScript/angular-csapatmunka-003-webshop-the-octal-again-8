@@ -3,11 +3,11 @@
   <td class="align-middle">{{ product.name }}</td>
   <td class="align-middle" [innerHTML]="product.description"></td>
   <td class="align-middle"><img class="img-fluid" src="{{imageBaseURL}}/thumb_{{ product.image }}" alt="" /></td>
-  <td class="align-middle">{{ product.price | currency: 'EUR':'symbol':'1.0-0' }} </td>
+  <td class="align-middle">{{ product.price }} </td>
   <td class="align-middle">{{ product.stock }}</td>
   <td class="align-middle">{{ product.featured }}</td>
   <td class="align-middle">{{ product.active }}</td>
-  <td class="align-middle">{{ product.promotedPrice | currency: 'EUR':'symbol':'1.0-0'}}</td>
+  <td class="align-middle">{{ product.promotedPrice }}</td>
   <td class="align-middle">
     <div class="btn-group">
       <button (click)="isEditable = true" class="btn btn-success">
@@ -18,9 +18,10 @@
 </ng-container>
 
 <ng-container *ngIf="isEditable">
+
   <td class="align-middle">
-    <select class="form-control" [(ngModel)]="product.catId">
-      <option *ngFor="let category of categories" [ngValue]="category.id">
+    <select class="form-control" [(ngModel)]="product.category" [compareWith]="compareFn">
+      <option *ngFor="let category of categories" [ngValue]="category">
         {{ category.name }}
       </option>
     </select>
@@ -41,7 +42,7 @@
     <input
       class="form-control price"
       type="text"
-      [ngModel]="product.price | currency: 'EUR':'symbol':'1.0-0'"
+      [ngModel]="product.price"
       (ngModelChange)="product.price = $event"
     />
   </td>
@@ -68,7 +69,7 @@
     <input
       class="form-control price"
       type="text"
-      [ngModel]="product.promotedPrice | currency: 'EUR':'symbol':'1.0-0'"
+      [ngModel]="product.promotedPrice"
       (ngModelChange)="product.promotedPrice = $event"
     />
   </td>
