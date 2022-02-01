@@ -16,7 +16,7 @@ export class DataEditorComponent implements OnInit {
   categories: Observable<Category[]> = this.categoryService.getAll();
   phrase: string = ""; //SzaboZs: filter pipe-hoz
   filterKey: string = ""; //SzaboZs: filter pipe-hoz
-  keys: string[] = Object.keys(new Product()).filter(key => { return !((key == 'id') || (key == 'catId')) }); //SzaboZs: filter pipe-hoz
+  keys: string[] = Object.keys(new Product()).filter(key => { return !((key == 'id') || (key == 'image')) }); //SzaboZs: filter pipe-hoz
 
   constructor(
     private productService: ProductService,
@@ -26,6 +26,7 @@ export class DataEditorComponent implements OnInit {
   ngOnInit(): void {
     this.productService.getAll().subscribe((products => {
       this.products = products;
+      this.keys.unshift('category');
     }));
   }
 
