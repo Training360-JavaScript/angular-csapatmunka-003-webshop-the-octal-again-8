@@ -14,17 +14,22 @@ export class DataEditorComponent implements OnInit {
 
   products: Product[] = [new Product()];
   categories: Observable<Category[]> = this.categoryService.getAll();
+  phrase: string = ""; //SzaboZs: filter pipe-hoz
+  filterKey: string = ""; //SzaboZs: filter pipe-hoz
+  keys: string[] = Object.keys(new Product()).filter(key => { return !((key == 'id') || (key == 'image')) }); //SzaboZs: filter pipe-hoz
 
   constructor(
     private productService: ProductService,
-    private categoryService:CategoryService,
+    private categoryService: CategoryService,
   ) { }
 
   ngOnInit(): void {
     this.productService.getAll().subscribe((products => {
       this.products = products;
+      this.keys.unshift('category');
     }));
   }
+
 
   onDelete(product:Product){
     this.productService.remove(product).subscribe(
@@ -36,7 +41,7 @@ export class DataEditorComponent implements OnInit {
     );
   }
 
-  onUpdate(product:Product){
+  onUpdate(product: Product) {
     this.productService.update(product).subscribe();
   }
 }
