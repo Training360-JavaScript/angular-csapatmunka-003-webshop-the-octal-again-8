@@ -30,8 +30,15 @@ export class DataEditorComponent implements OnInit {
     }));
   }
 
-  onDelete(product: Product) {
-    this.productService.remove(product).subscribe();
+
+  onDelete(product:Product){
+    this.productService.remove(product).subscribe(
+      () => {
+        this.products = this.products.filter(productitem => {
+          return productitem.id !== product.id
+        })
+      }
+    );
   }
 
   onUpdate(product: Product) {
