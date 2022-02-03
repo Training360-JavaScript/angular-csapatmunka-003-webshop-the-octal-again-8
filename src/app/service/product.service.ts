@@ -23,7 +23,7 @@ export class ProductService {
   }
 
   getProductsByCategory(catId: number): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.apiURL}?_expand=category&categoryId_eq=${catId}`);
+    return this.http.get<Product[]>(`${this.apiURL}?_expand=category&categoryId_like=${catId}`);
   }
 
   update(product:Product): Observable<Product>{
