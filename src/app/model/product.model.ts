@@ -3,7 +3,7 @@ import { Category } from "./category.model";
 export class Product {
   [key: string]: any;
   id: number = 0;
-  catId: number = 0;
+  categoryId: number = 0;
   name: string = '';
   description: string = '';
   image: string = '';
@@ -18,7 +18,7 @@ export class Product {
     if (properties) {
       this.id = properties.id || 0;
       this.name = properties.name || '';
-      this.catId = properties.catId || 0;
+      this.categoryId = properties.categoryId || 0;
       this.description = properties.description || '';
       this.image = properties.image || '';
       this.price = properties.price || 0;
