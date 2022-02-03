@@ -21,7 +21,7 @@
           </option>
         </select>
       </div>
-      <div class="table-responsive" *ngIf="categories">
+      <div class="table-responsive" *ngIf="categories && products">
         <table class="table table-sm table-hover table-striped table-bordered">
           <thead>
             <tr>
@@ -38,7 +38,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr app-two-way-editor [product]="product" [categories]="categories | async"
+            <tr app-two-way-editor [product]="product" [categories]="categories"
               *ngFor="let product of products | filter:phrase:filterKey" (delProduct)="onDelete($event)"
               (updateProduct)="onUpdate($event)"></tr>
           </tbody>
@@ -47,7 +47,7 @@
     </div>
     <div *ngIf="newProduct" class="col-6">
       <app-product-create [product]="newProduct" 
-                          [categories]="categories | async"
+                          [categories]="categories"
                           (closeWithoutSaving)="cancelAddNew()"
                           (saveNewProduct)="onSaveNewProduct($event)"></app-product-create>
     </div>

@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
 export class DataEditorComponent implements OnInit {
 
   products: Product[] = [new Product()];
-  categories: Observable<Category[]> = this.categoryService.getAll();
+  categories?: Category[];
   phrase: string = ""; //SzaboZs: filter pipe-hoz
   filterKey: string = ""; //SzaboZs: filter pipe-hoz
   keys: string[] = Object.keys(new Product()).filter(key => { return !((key == 'id') || (key == 'image')) }); //SzaboZs: filter pipe-hoz
@@ -25,7 +25,14 @@ export class DataEditorComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.loadCategories();
     this.loadProducts();
+  }
+
+  loadCategories(): void {
+    this.categoryService.getAll().subscribe(catList => {
+      this.categories = catList;
+    })
   }
 
   loadProducts(): void {

@@ -10,7 +10,7 @@ import { Product } from 'src/app/model/product.model';
 export class ProductCreateComponent implements OnInit {
 
   @Input() product!: Product;
-  @Input() categories: Category[] | null = [new Category()];
+  @Input() categories: Category[] | undefined;
 
   @Output() closeWithoutSaving: EventEmitter<void> = new EventEmitter();
   @Output() saveNewProduct: EventEmitter<Product> = new EventEmitter();
