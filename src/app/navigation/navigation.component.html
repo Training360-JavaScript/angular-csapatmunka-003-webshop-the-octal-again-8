@@ -21,6 +21,8 @@
         <li *ngFor="let item of menuItems" class="nav-item">
           <a
             class="nav-link text-white"
+            [routerLinkActiveOptions]="{exact: true}"
+            [routerLinkActive]="['menu-active']"
             [routerLink]="item.link"
           >{{ item.text }}</a>
         </li>
