@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +21,7 @@ import { AdminComponent } from './page/admin/admin.component';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
 import { TwoWayEditorComponent } from './common/two-way-editor/two-way-editor.component';
 import { ProductCreateComponent } from './common/product-create/product-create.component';
+import { NetworkInterceptorInterceptor } from './interceptors/network-interceptor.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +47,13 @@ import { ProductCreateComponent } from './common/product-create/product-create.c
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: NetworkInterceptorInterceptor, 
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
