@@ -17,10 +17,15 @@ export class TwoWayEditorComponent implements OnInit {
 
   isEditable: boolean = false;
   imageBaseURL: string = `${environment.baseURL}product_images/`;
+  //This will hold the original values, that helps us to reset form back to its original state.
+  originalProductValues!: Product;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    //copy without reference. KD.
+    this.originalProductValues = JSON.parse(JSON.stringify(this.product));
+  }
 
   compareFn(c1: Category, c2: Category): boolean {
     return c1 && c2 ? c1.id === c2.id : c1 === c2;

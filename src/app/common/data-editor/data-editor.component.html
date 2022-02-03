@@ -1,50 +1,56 @@
 <div>
   <div class="row my-2">
     <div class="col-10">
-      <h3>Product-list</h3>
+      <h3>Manage products</h3>
     </div>
-    <div class="col-2 text-right"></div>
-  </div>
-  <div class="inline">
-    <button [routerLink]="['admin']" class="btn btn-success mb-3">
-      CREATE
-    </button>
-    <div class="form-group form-inline pull-right">
-      <label for="phrase" class="ml-2">Phrase:</label>
-      <input type="text" id="phrase" [(ngModel)]="phrase" class="form-control ml-2" placeholder="Filter products...">
-    </div>
-    <div class="form-group form-inline pull-right">
-      <label for="key">Column:</label>
-      <select type="text" id="key" [(ngModel)]="filterKey" class="form-control ml-2" placeholder="Filter Column...">
-<!--   <option value="keys[1]" selected>{{keys[1] | titlecase}}</option>  -->
-       <option *ngFor="let key of keys" [value]="key">
-          {{ key | titlecase }}
-        </option>
-      </select>
+    <div class="col-2 text-right">
+      <button *ngIf="!newProduct" (click)="createProduct()" class="btn btn-success mb-3">CREATE</button>
     </div>
   </div>
+  <div class="row">
+    <div [ngClass]="{'col-12': !newProduct, 'col-6': 'newProduct'}">
+      <div class="form-group form-inline pull-right">
+        <label for="phrase" class="ml-2">Phrase:</label>
+        <input type="text" id="phrase" [(ngModel)]="phrase" class="form-control ml-2" placeholder="Filter products...">
+      </div>
+      <div class="form-group form-inline pull-right">
+        <label for="key">Column:</label>
+        <select type="text" id="key" [(ngModel)]="filterKey" class="form-control ml-2" placeholder="Filter Column...">
+         <option *ngFor="let key of keys" [value]="key">
+            {{ key | titlecase }}
+          </option>
+        </select>
+      </div>
+      <div class="table-responsive" *ngIf="categories">
+        <table class="table table-sm table-hover table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Image</th>
+              <th>Price(€)</th>
+              <th>Stock</th>
+              <th>Featured</th>
+              <th>Active</th>
+              <th>Promoted Price(€)</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr app-two-way-editor [product]="product" [categories]="categories | async"
+              *ngFor="let product of products | filter:phrase:filterKey" (delProduct)="onDelete($event)"
+              (updateProduct)="onUpdate($event)"></tr>
+          </tbody>
+        </table>
+      </div>        
+    </div>
+    <div *ngIf="newProduct" class="col-6">
+      <app-product-create [product]="newProduct" 
+                          [categories]="categories | async"
+                          (closeWithoutSaving)="cancelAddNew()"
+                          (saveNewProduct)="onSaveNewProduct($event)"></app-product-create>
+    </div>
+  </div><!--row vége-->
 
-  <div class="table-responsive" *ngIf="categories">
-    <table class="table table-sm table-hover table-striped table-bordered">
-      <thead>
-        <tr>
-          <th>Category</th>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Image</th>
-          <th>Price(€)</th>
-          <th>Stock</th>
-          <th>Featured</th>
-          <th>Active</th>
-          <th>Promoted Price(€)</th>
-          <th>&nbsp;</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr app-two-way-editor [product]="product" [categories]="categories | async "
-          *ngFor="let product of products | filter:phrase:filterKey" (delProduct)="onDelete($event)"
-          (updateProduct)="onUpdate($event)"></tr>
-      </tbody>
-    </table>
-  </div>
 </div>

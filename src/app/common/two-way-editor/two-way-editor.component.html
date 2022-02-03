@@ -13,13 +13,27 @@
       <button (click)="isEditable = true" class="btn btn-success">
         <i class="fa fa-pencil"></i>
       </button>
+      <button (click)="onDelete(product)" class="btn btn-danger">
+        <i class="fa fa-trash"></i>
+      </button>
     </div>
   </td>
 </ng-container>
 
 <ng-container *ngIf="isEditable">
-
   <td class="align-middle">
+    <!-- Hidden form -->
+    <form #formref="ngForm">
+      <input type="hidden" name="id" [(ngModel)]="product.id">
+      <input type="hidden" name="name" [(ngModel)]="product.name" required>
+      <input type="hidden" name="description" [(ngModel)]="product.description">
+      <input type="hidden" name="price" [(ngModel)]="product.price" required>
+      <input type="hidden" name="stock" [(ngModel)]="product.stock" required>
+      <input type="hidden" name="featured" [(ngModel)]="product.featured" required>
+      <input type="hidden" name="active" [(ngModel)]="product.active" required>
+      <input type="hidden" name="promotedPrice" [(ngModel)]="product.promotedPrice">
+    </form>
+    <!-- end of hidden form -->
     <select class="form-control" [(ngModel)]="product.category" [compareWith]="compareFn">
       <option *ngFor="let category of categories" [ngValue]="category">
         {{ category.name }}
@@ -74,12 +88,12 @@
     />
   </td>
   <td class="align-middle">
-    <div class="btn-group">
-      <button (click)="onUpdate(product)" class="btn btn-info">
+    <div class="btn-group" role="group">
+      <button (click)="onUpdate(product)" class="btn btn-info" [disabled]="!formref.form.valid">
         <i class="fa fa-save"></i>
       </button>
-      <button (click)="onDelete(product)" class="btn btn-danger ml-2">
-        <i class="fa fa-trash"></i>
+      <button (click)="formref.resetForm(originalProductValues); isEditable=false;" class="btn btn-secondary">
+        <i class="fa fa-undo"></i>
       </button>
     </div>
   </td>

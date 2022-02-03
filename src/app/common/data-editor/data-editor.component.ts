@@ -17,6 +17,7 @@ export class DataEditorComponent implements OnInit {
   phrase: string = ""; //SzaboZs: filter pipe-hoz
   filterKey: string = ""; //SzaboZs: filter pipe-hoz
   keys: string[] = Object.keys(new Product()).filter(key => { return !((key == 'id') || (key == 'image')) }); //SzaboZs: filter pipe-hoz
+  newProduct?: Product;
 
   constructor(
     private productService: ProductService,
@@ -24,12 +25,30 @@ export class DataEditorComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.productService.getAll().subscribe((products => {
+    this.loadProducts();
+  }
+
+  loadProducts(): void {
+    this.productService.getAll().forEach((products => {
       this.products = products;
       this.keys.unshift('category');
     }));
+  };
+
+  createProduct(): void {
+    this.newProduct = new Product();
+  }
+  cancelAddNew(): void {
+    this.newProduct = undefined;
   }
 
+  onSaveNewProduct(product: Product): void {
+    this.productService.create(product).forEach(newProduct => {
+      //this.products.unshift(newProduct); because of missing category data, we are refreshing the whole table. dirty but works for now
+      this.loadProducts();
+      this.newProduct = undefined;
+    });
+  }
 
   onDelete(product:Product){
     this.productService.remove(product).subscribe(

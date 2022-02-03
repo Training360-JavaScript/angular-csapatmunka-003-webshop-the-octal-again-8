@@ -1,6 +1,6 @@
 import { Product } from './../model/product.model';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
@@ -28,6 +28,10 @@ export class ProductService {
 
   update(product:Product): Observable<Product>{
     return this.http.patch<Product>(`${this.apiURL}/${product.id}`, product);
+  }
+
+  create(product: Product): Observable<Product> {
+    return this.http.post<Product>(this.apiURL, product);
   }
 
   remove(product:Product): Observable<Product>{
