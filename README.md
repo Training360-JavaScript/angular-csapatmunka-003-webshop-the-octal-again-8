@@ -1,3 +1,5 @@
+JSON-SERVER indítása: gyökérből ezt kell kiadni : json-server --watch _____JSON-SERVER/octal-webshop.json
+
 # Angular második csapatmunka
 
 ## Feladat
